@@ -1,0 +1,11 @@
+[workspace]
+resolver = "3"
+members = ["crates/api-server", "crates/db-processor", "crates/engine", "crates/redis"]
+
+[workspace.dependencies]
+tokio = { version = "1.40", features = ["full"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+sqlx = { version = "0.8", features = ["runtime-tokio", "postgres", "chrono"] }
+redis = { version = "0.31.0", features = ["tokio-comp"] }
+poem = "3.1.11"
