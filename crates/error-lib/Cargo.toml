@@ -1,5 +1,5 @@
 [package]
-name = "redis"
+name = "error-lib"
 version = "0.1.0"
 edition = "2024"
 
